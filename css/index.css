@@ -1,0 +1,50 @@
+.carousel-item::before{
+    content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background: black;
+    background-color: black;
+	/* background-color:b; */
+opacity: 0.6;
+}
+
+#hero .scroll{
+    transition: 0.4s;
+    color: rgba(255, 255, 255, 0.6);
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+     0% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.figure img:hover{
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  /* text-align: center; */
+}
+
+/* PORTAFOLIO */ 
+.ocultar{
+    display: none;
+}
+
+footer{
+    background: url("../assets/prueba.jpg") top center no-repeat;
+    background-size: cover;
+}
